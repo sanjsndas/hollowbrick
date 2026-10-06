@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hollow Brick Ideas · Interior Design & Architecture Journal</title>
+  <meta name="description" content="Independent editorial on interior design, architecture, materials, and space planning. In-depth guides, case studies, and practical knowledge for design enthusiasts.">
+  <link rel="canonical" href="https://hollowbrickideas.com/index.html">
+  <meta property="og:title" content="Hollow Brick Ideas · Interior Design & Architecture Journal">
+  <meta property="og:description" content="In-depth articles on residential architecture, modern interiors, materials, lighting, and space planning.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hollowbrickideas.com/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema markup for blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Hollow Brick Ideas",
+    "description": "Independent editorial on interior design and architecture.",
+    "url": "https://hollowbrickideas.com",
+    "author": {
+      "@type": "Person",
+      "name": "Maya Chen"
+    }
+  }
+  </script>
+  <!-- Fonts & minimal reset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --paper-2: #ffffff;
+      --border: #e2dfda;
+      --muted: #6b6b6b;
+      --accent: #a6472e; /* subtle terracotta */
+      --accent-soft: #f3eae6;
+      --max-width: 1280px;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+    .logo span {
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .nav-links a {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.2rem;
+      transition: border-color 0.2s;
+    }
+    .nav-links a:hover {
+      border-color: var(--accent);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    /* ---------- SEARCH & FILTER BAR ---------- */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.5rem 0 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .category-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .pill {
+      background: transparent;
+      border: 1px solid var(--border);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.15s;
+      color: var(--muted);
+    }
+    .pill:hover, .pill.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--ink);
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 0.2rem;
+      min-width: 240px;
+    }
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 0.4rem 0.2rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+    }
+    .search-box input::placeholder {
+      color: #aaa;
+      font-style: italic;
+    }
+    /* ---------- MAIN GRID (BLOG + SIDEBAR) ---------- */
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3.5rem;
+      margin-bottom: 5rem;
+    }
+    /* ---------- FEATURED SECTION ---------- */
+    .featured-article {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2.5rem;
+      background: var(--paper-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      align-items: center;
+    }
+    .featured-image img {
+      border-radius: 2px;
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      filter: grayscale(0.1);
+    }
+    .featured-content .category-tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+      display: inline-block;
+      border-bottom: 1px solid var(--accent-soft);
+    }
+    .featured-content h2 {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .featured-content h2 a:hover {
+      color: var(--accent);
+    }
+    .featured-excerpt {
+      color: var(--muted);
+      margin: 1rem 0 1.5rem;
+      font-size: 1rem;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .read-time {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    /* ---------- ARTICLE CARDS (LIST) ---------- */
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    .article-card {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2.5rem;
+      align-items: start;
+    }
+    .article-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+    .card-content .category-tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .card-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 0.7rem;
+      letter-spacing: -0.01em;
+    }
+    .card-content h3 a:hover {
+      color: var(--accent);
+    }
+    .card-excerpt {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      max-width: 90%;
+    }
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      font-size: 0.9rem;
+    }
+    .sidebar-widget {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+    .widget-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+    .about-editor p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .editor-name {
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+    .popular-list {
+      list-style: none;
+    }
+    .popular-list li {
+      margin-bottom: 1.3rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px dashed var(--border);
+    }
+    .popular-list a {
+      font-weight: 400;
+      display: block;
+      margin-bottom: 0.2rem;
+      line-height: 1.4;
+    }
+    .popular-list a:hover {
+      color: var(--accent);
+    }
+    .popular-list .meta-small {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+    .newsletter-sidebar {
+      background: var(--accent-soft);
+      padding: 1.5rem;
+      border-radius: 2px;
+    }
+    .newsletter-sidebar p {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .newsletter-sidebar input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid var(--border);
+      background: var(--paper-2);
+      margin-bottom: 0.8rem;
+      font-family: var(--font-sans);
+    }
+    .newsletter-sidebar button {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    /* ---------- LONG-FORM CONTENT (INLINE) ---------- */
+    .long-form-section {
+      margin: 4rem 0;
+      border-top: 1px solid var(--border);
+      padding-top: 3rem;
+    }
+    .long-form-section h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .long-form-section h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+    }
+    .long-form-section p {
+      margin-bottom: 1.4rem;
+      color: #2c2c2c;
+    }
+    .long-form-section img {
+      margin: 2rem 0 1rem;
+      border-radius: 2px;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .img-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      cursor: pointer;
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .footer-col p {
+      margin-bottom: 1rem;
+    }
+    .footer-col h4 {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .blog-layout {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        margin-top: 2rem;
+      }
+      .featured-article {
+        grid-template-columns: 1fr;
+      }
+      .featured-image img {
+        height: 220px;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .article-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .article-card img {
+        height: 180px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .featured-content h2 {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo {
+        font-size: 1.6rem;
+      }
+    }
+    /* utility */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Hollow Brick<span>Ideas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">Menu</button>
+      <nav class="nav-links" id="navLinks">
+       <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- SEARCH & FILTER -->
+    <div class="filter-bar">
+      <div class="category-pills" id="categoryPills">
+        <button class="pill active" data-category="all">All</button>
+        <button class="pill" data-category="interior">Interior Design</button>
+        <button class="pill" data-category="architecture">Architecture</button>
+        <button class="pill" data-category="materials">Materials</button>
+        <button class="pill" data-category="lighting">Lighting</button>
+        <button class="pill" data-category="furniture">Furniture</button>
+        <button class="pill" data-category="small-spaces">Small Spaces</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+
+    <!-- BLOG LAYOUT -->
+    <div class="blog-layout">
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <!-- FEATURED ARTICLE -->
+        <article class="featured-article" data-category="architecture" data-title="The quiet power of residential architecture">
+          <div class="featured-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Modern residential house with large glass windows and concrete facade">
+          </div>
+          <div class="featured-content">
+            <span class="category-tag">Architecture</span>
+            <h2><a href="#">The Quiet Power of Residential Architecture: Designing for Daily Life</a></h2>
+            <p class="featured-excerpt">Great homes aren't about spectacle. They're about the unspoken choreography of light, material, and proportion that shapes how we live.</p>
+            <div class="meta">
+              <span>Maya Chen</span>
+              <span>March 12, 2025</span>
+              <span class="read-time">8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ARTICLE LIST (dynamically filterable) -->
+        <div class="article-list" id="articleList">
+          <!-- Article 1 -->
+          <article class="article-card" data-category="interior" data-title="Layered lighting guide">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop" alt="Warm interior with layered lighting, floor lamp and pendant light">
+            <div class="card-content">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">The Art of Layered Lighting: A Room-by-Room Guide</a></h3>
+              <p class="card-excerpt">Ambient, task, and accent lighting—how to combine them for comfort and drama without over-lighting.</p>
+              <div class="meta"><span>6 min read</span><span>Mar 10, 2025</span></div>
+            </div>
+          </article>
+          <!-- Article 2 -->
+          <article class="article-card" data-category="materials" data-title="Choosing stone for kitchens">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" alt="Kitchen countertop in natural stone with veining detail">
+            <div class="card-content">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Marble, Quartzite, or Soapstone? A Practical Guide to Kitchen Stone</a></h3>
+              <p class="card-excerpt">Durability, maintenance, and patina—choose the right surface for the way you cook and live.</p>
+              <div class="meta"><span>9 min read</span><span>Mar 8, 2025</span></div>
+            </div>
+          </article>
+          <!-- Article 3 -->
+          <article class="article-card" data-category="small-spaces" data-title="Small apartment design">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop" alt="Compact living room with multifunctional furniture and bright walls">
+            <div class="card-content">
+              <span class="category-tag">Small Spaces</span>
+              <h3><a href="#">Living Large in 40 Square Meters: Lessons from Tokyo Apartments</a></h3>
+              <p class="card-excerpt">Smart storage, visual tricks, and furniture that does double duty—without feeling cramped.</p>
+              <div class="meta"><span>7 min read</span><span>Mar 5, 2025</span></div>
+            </div>
+          </article>
+          <!-- Article 4 -->
+          <article class="article-card" data-category="lighting" data-title="Daylighting strategies">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" alt="Sunlit living room with large windows and sheer curtains">
+            <div class="card-content">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">Daylighting 101: How to Work with Natural Light in Your Home</a></h3>
+              <p class="card-excerpt">Orientation, window treatments, and reflective surfaces that make the most of every sunbeam.</p>
+              <div class="meta"><span>5 min read</span><span>Mar 2, 2025</span></div>
+            </div>
+          </article>
+          <!-- Article 5 -->
+          <article class="article-card" data-category="architecture" data-title="Facade materials">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop" alt="Contemporary house facade with wood cladding and concrete">
+            <div class="card-content">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">Beyond Render: Exploring Modern Facade Materials</a></h3>
+              <p class="card-excerpt">From charred timber to fiber cement—how material choice defines a home's character and performance.</p>
+              <div class="meta"><span>10 min read</span><span>Feb 28, 2025</span></div>
+            </div>
+          </article>
+          <!-- Article 6 -->
+          <article class="article-card" data-category="furniture" data-title="Sofa buying guide">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop" alt="Neutral linen sofa in a bright living room">
+            <div class="card-content">
+              <span class="category-tag">Furniture</span>
+              <h3><a href="#">The Informed Sofa Buyer: Frame, Fill, and Fabric</a></h3>
+              <p class="card-excerpt">What to look for beyond the showroom shine—so your next sofa lasts a decade, not a season.</p>
+              <div class="meta"><span>8 min read</span><span>Feb 25, 2025</span></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- LONG-FORM EDITORIAL SECTION -->
+        <section class="long-form-section">
+          <h2>Design Principles: The Foundation of Good Space</h2>
+          <p>Great interior design and architecture are not about trends. They are about understanding how people move, rest, gather, and create. In this long-form editorial, we explore the enduring principles that separate a decorated room from a considered environment. From the golden ratio to the psychology of color, these are the tools that help designers make decisions that feel inevitable rather than arbitrary.</p>
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop" alt="Open plan living and dining area with balanced proportions and natural materials">
+          <p class="img-caption">A living space where proportion and material honesty create calm.</p>
+          <h3>Scale and Proportion: The Invisible Framework</h3>
+          <p>Before a single piece of furniture is placed, the bones of a room dictate its success. Ceiling height, window placement, and the relationship between rooms are architectural decisions that no amount of styling can override. We look at how to assess proportion and how to correct common imbalances—like a too-low ceiling or an overly long narrow room—through color, lighting, and furniture arrangement.</p>
+          <h3>Material Honesty and Patina</h3>
+          <p>Materials age. They scratch, fade, and develop character. The best interiors embrace this rather than fight it. We discuss why solid wood, natural stone, and unlacquered brass are often better long-term choices than their synthetic mimics, and how to design for the beauty of wear.</p>
+          <p>This is not nostalgia; it's a practical approach to sustainability and longevity. When a material ages gracefully, you replace it less often. That's good for the planet and for your budget.</p>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="long-form-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-grid" id="faqContainer">
+            <div class="faq-item">
+              <div class="faq-question">How do I choose a color palette for a small room? <span>+</span></div>
+              <div class="faq-answer">Start with a light, neutral base for walls and large furniture, then layer in one or two accent colors through textiles, art, and accessories. Avoid dark, saturated colors on all surfaces—they can make a space feel like a cave. Use the 60-30-10 rule: 60% dominant, 30% secondary, 10% accent.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What is the best lighting for a home office? <span>+</span></div>
+              <div class="faq-answer">Combine ambient light (ceiling fixture or recessed) with a dedicated task light (desk lamp) that you can adjust. Position the task light to avoid glare on your screen. If possible, place your desk perpendicular to a window so you get natural light without direct sun on your monitor.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">How can I make a rental feel like home? <span>+</span></div>
+              <div class="faq-answer">Focus on what you can change: lighting (swap harsh fixtures for warm plug-in sconces), textiles (rugs, curtains, throws), and removable wallpaper or peel-and-stick tile. Invest in freestanding storage and art that you can take with you.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What's the difference between interior design and interior decorating? <span>+</span></div>
+              <div class="faq-answer">Interior design involves space planning, structural changes, building codes, and technical drawings. Interior decorating focuses on finishes, furniture, and styling within an existing layout. Both are valuable, but they require different skill sets.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-widget about-editor">
+          <h3 class="widget-title">About the Editor</h3>
+          <p>Maya Chen is an architectural designer and writer based in Portland. She founded Hollow Brick Ideas to bridge the gap between professional practice and everyday design curiosity.</p>
+          <p class="editor-name">Maya Chen</p>
+        </div>
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Popular This Week</h3>
+          <ul class="popular-list">
+            <li><a href="#">10 Common Lighting Mistakes (and How to Fix Them)</a><span class="meta-small">6 min read</span></li>
+            <li><a href="#">A Beginner's Guide to Reading Floor Plans</a><span class="meta-small">7 min read</span></li>
+            <li><a href="#">Why Your Living Room Feels Unfinished (It's Not the Furniture)</a><span class="meta-small">5 min read</span></li>
+            <li><a href="#">The Case for Fewer, Better Things</a><span class="meta-small">4 min read</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget newsletter-sidebar">
+          <h3 class="widget-title">The Weekly Draft</h3>
+          <p>One thoughtful email every Sunday. Design ideas, reading, and a single practical tip.</p>
+          <input type="email" placeholder="Your email" id="newsletterEmail">
+          <button id="newsletterBtn">Subscribe</button>
+          <p style="font-size:0.7rem; margin-top:0.8rem;">No spam. Unsubscribe anytime.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Hollow Brick</div>
+          <p>An independent editorial publication about interior design, architecture, and the built environment. We publish in-depth articles for people who want to understand how spaces work.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hollow Brick Ideas. All rights reserved.</span>
+        <span>Made with care for the curious.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // ----- MOBILE MENU -----
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+
+      // ----- CATEGORY FILTER -----
+      const pills = document.querySelectorAll('.pill');
+      const articles = document.querySelectorAll('.article-card');
+      const featured = document.querySelector('.featured-article');
+      const searchInput = document.getElementById('searchInput');
+
+      function filterArticles() {
+        const activePill = document.querySelector('.pill.active');
+        const category = activePill ? activePill.dataset.category : 'all';
+        const query = searchInput.value.toLowerCase().trim();
+
+        // Filter article cards
+        articles.forEach(card => {
+          const cardCat = card.dataset.category;
+          const title = card.dataset.title.toLowerCase();
+          const matchesCategory = category === 'all' || cardCat === category;
+          const matchesSearch = query === '' || title.includes(query);
+          if (matchesCategory && matchesSearch) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Featured article (also filter by category / search)
+        if (featured) {
+          const featCat = featured.dataset.category;
+          const featTitle = featured.dataset.title.toLowerCase();
+          const matchesCategory = category === 'all' || featCat === category;
+          const matchesSearch = query === '' || featTitle.includes(query);
+          if (matchesCategory && matchesSearch) {
+            featured.classList.remove('hidden');
+          } else {
+            featured.classList.add('hidden');
+          }
+        }
+      }
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          filterArticles();
+        });
+      });
+
+      searchInput.addEventListener('input', filterArticles);
+
+      // ----- FAQ TOGGLE -----
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          if (e.target.closest('.faq-answer')) return; // allow text selection
+          item.classList.toggle('open');
+          const icon = item.querySelector('.faq-question span');
+          if (icon) {
+            icon.textContent = item.classList.contains('open') ? '−' : '+';
+          }
+        });
+      });
+
+      // ----- NEWSLETTER (demo) -----
+      const newsletterBtn = document.getElementById('newsletterBtn');
+      const newsletterEmail = document.getElementById('newsletterEmail');
+      if (newsletterBtn) {
+        newsletterBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const email = newsletterEmail.value.trim();
+          if (email && email.includes('@')) {
+            alert('Thanks for subscribing! (Demo — no email was sent.)');
+            newsletterEmail.value = '';
+          } else {
+            alert('Please enter a valid email address.');
+          }
+        });
+      }
+
+      // Initialize filter (in case any active pill is set)
+      filterArticles();
+    })();
+  </script>
+</body>
+</html>

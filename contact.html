@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Hollow Brick Ideas</title>
+  <meta name="description" content="Get in touch with Hollow Brick Ideas — editorial inquiries, collaborations, or just to say hello. We read every message.">
+  <link rel="canonical" href="https://hollowbrickideas.com/contact.html">
+  <meta property="og:title" content="Contact · Hollow Brick Ideas">
+  <meta property="og:description" content="Reach the editorial team at Hollow Brick Ideas.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hollowbrickideas.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Hollow Brick Ideas",
+    "url": "https://hollowbrickideas.com/contact.html",
+    "author": { "@type": "Person", "name": "Maya Chen" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --paper-2: #ffffff;
+      --border: #e2dfda;
+      --muted: #6b6b6b;
+      --accent: #a6472e;
+      --accent-soft: #f3eae6;
+      --max-width: 1280px;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    /* ---------- HEADER (matches main) ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+    .logo span {
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .nav-links a {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.2rem;
+      transition: border-color 0.2s;
+    }
+    .nav-links a:hover { border-color: var(--accent); }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    /* ---------- CONTACT PAGE SPECIFIC ---------- */
+    .page-header {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+    .page-header h1 {
+      font-family: var(--font-serif);
+      font-size: 3.4rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+    .page-header .subhead {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 620px;
+      font-weight: 300;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      margin-bottom: 5rem;
+    }
+    .contact-form {
+      background: var(--paper-2);
+      border: 1px solid var(--border);
+      padding: 2.5rem 2.5rem 2rem;
+      border-radius: 4px;
+    }
+    .contact-form h2 {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 400;
+      margin-bottom: 1.8rem;
+      letter-spacing: -0.01em;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border);
+      background: var(--paper);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      transition: border-color 0.2s, background 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      background: #fff;
+    }
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .btn-submit {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover {
+      background: var(--accent);
+    }
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.8rem;
+      text-align: center;
+    }
+    /* contact info panel */
+    .contact-info {
+      padding-top: 0.5rem;
+    }
+    .contact-info h2 {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .contact-info > p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .info-block {
+      margin-bottom: 2.2rem;
+      border-bottom: 1px dashed var(--border);
+      padding-bottom: 1.8rem;
+    }
+    .info-block:last-child {
+      border-bottom: none;
+    }
+    .info-block h3 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .info-block p, .info-block a {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+    .info-block a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .info-block .small-muted {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+    /* social row */
+    .social-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .social-row a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.1rem;
+      transition: border-color 0.2s;
+    }
+    .social-row a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    /* map / place */
+    .map-placeholder {
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      margin-top: 1rem;
+      border-radius: 2px;
+    }
+    .map-placeholder p {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+    }
+    .map-placeholder span {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    /* faq / small trust section */
+    .contact-faq {
+      background: var(--paper-2);
+      border: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      margin-bottom: 5rem;
+      border-radius: 4px;
+    }
+    .contact-faq h2 {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+    .contact-faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .contact-faq-item p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .contact-faq-item strong {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    /* ---------- FOOTER (matches main) ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .footer-col p { margin-bottom: 1rem; }
+    .footer-col h4 {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .contact-faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 1.5rem; }
+      .header-inner { flex-wrap: wrap; }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+      }
+      .nav-links.show { display: flex; }
+      .menu-toggle { display: block; }
+      .page-header h1 { font-size: 2.4rem; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      .contact-form { padding: 1.8rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .contact-faq { padding: 1.8rem; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .logo { font-size: 1.6rem; }
+      .page-header h1 { font-size: 2rem; }
+    }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Hollow Brick<span>Ideas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">Menu</button>
+      <nav class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" style="border-color: var(--accent);">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>Contact</h1>
+      <p class="subhead">Editorial inquiries, collaborations, or just a note about a space you love — we read every message.</p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div class="contact-form">
+        <h2>Send a message</h2>
+        <form id="contactForm" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send message</button>
+          <p class="form-note">We typically reply within 2–3 business days.</p>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>Other ways to reach us</h2>
+        <p>Whether you're a designer, architect, student, or simply curious about the built world, we'd love to hear from you.</p>
+
+        <div class="info-block">
+          <h3>Editorial</h3>
+          <p>Maya Chen, Editor</p>
+          <p><a href="mailto:editor@hollowbrickideas.com">editor@hollowbrickideas.com</a></p>
+          <p class="small-muted">Pitches, story ideas, and corrections.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>General inquiries</h3>
+          <p><a href="mailto:hello@hollowbrickideas.com">hello@hollowbrickideas.com</a></p>
+          <p class="small-muted">Partnerships, advertising, and everything else.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Mailing address</h3>
+          <p>Hollow Brick Ideas<br>PO Box 8421<br>Portland, OR 97207</p>
+          <p class="small-muted">Please note: we do not accept physical press kits.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Follow along</h3>
+          <div class="social-row">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">RSS</a>
+          </div>
+        </div>
+
+        <!-- subtle map-like block -->
+        <div class="map-placeholder">
+          <p>Based in Portland, Oregon</p>
+          <span>Working with collaborators worldwide.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL FAQ / EXPECTATIONS -->
+    <section class="contact-faq">
+      <h2>Before you write</h2>
+      <div class="contact-faq-grid">
+        <div class="contact-faq-item">
+          <strong>Do you accept guest posts?</strong>
+          <p>Rarely. We only publish contributed articles from established design professionals. Send a short pitch first — no full drafts.</p>
+        </div>
+        <div class="contact-faq-item">
+          <strong>Can you review my product?</strong>
+          <p>We do not accept unsolicited product samples. For review consideration, please email a press release and high-res images to our editorial address.</p>
+        </div>
+        <div class="contact-faq-item">
+          <strong>I found a factual error.</strong>
+          <p>Thank you — we appreciate corrections. Please include the article URL and the specific correction in your message.</p>
+        </div>
+        <div class="contact-faq-item">
+          <strong>Response time</strong>
+          <p>We're a small team. Most emails get a reply within 2–3 business days. If you don't hear back within a week, feel free to follow up.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Hollow Brick</div>
+          <p>An independent editorial publication about interior design, architecture, and the built environment. We publish in-depth articles for people who want to understand how spaces work.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hollow Brick Ideas. All rights reserved.</span>
+        <span>Made with care for the curious.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT (mobile menu + simple form demo) -->
+  <script>
+    (function() {
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+
+      // Contact form demo handler
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const message = document.getElementById('message').value.trim();
+          if (!name || !email || !message) {
+            alert('Please fill in your name, email, and message.');
+            return;
+          }
+          if (!email.includes('@') || !email.includes('.')) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+          alert('Thank you, ' + name + '! Your message has been received. (Demo — no email was sent.)');
+          contactForm.reset();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

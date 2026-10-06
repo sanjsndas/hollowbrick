@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Hollow Brick Ideas</title>
+  <meta name="description" content="About Hollow Brick Ideas — independent editorial on interior design, architecture, materials, and space planning. Our story, mission, and editorial team.">
+  <link rel="canonical" href="https://hollowbrickideas.com/about.html">
+  <meta property="og:title" content="About · Hollow Brick Ideas">
+  <meta property="og:description" content="Independent editorial on interior design and architecture. Our story, mission, and team.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hollowbrickideas.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema markup for AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Hollow Brick Ideas",
+    "description": "Independent editorial on interior design and architecture. Our story, mission, and editorial team.",
+    "url": "https://hollowbrickideas.com/about.html",
+    "author": {
+      "@type": "Person",
+      "name": "Maya Chen"
+    }
+  }
+  </script>
+  <!-- Fonts & minimal reset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --paper-2: #ffffff;
+      --border: #e2dfda;
+      --muted: #6b6b6b;
+      --accent: #a6472e; /* subtle terracotta */
+      --accent-soft: #f3eae6;
+      --max-width: 1280px;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+    .logo span {
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      list-style: none;
+    }
+    .nav-links a {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.2rem;
+      transition: border-color 0.2s;
+    }
+    .nav-links a:hover {
+      border-color: var(--accent);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    /* ---------- PAGE TITLE ---------- */
+    .page-header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+      font-weight: 300;
+    }
+    /* ---------- ABOUT CONTENT ---------- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+      align-items: start;
+    }
+    .about-text h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 2rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+    .about-text h2:first-of-type {
+      margin-top: 0;
+    }
+    .about-text p {
+      margin-bottom: 1.4rem;
+      color: #2c2c2c;
+      font-size: 1.05rem;
+    }
+    .about-text .highlight {
+      background: var(--accent-soft);
+      padding: 1.8rem 2rem;
+      border-left: 3px solid var(--accent);
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--ink);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .about-image {
+      border-radius: 2px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    .about-image img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    .about-image.small img {
+      height: 220px;
+    }
+    .img-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .values-list {
+      list-style: none;
+      margin: 1.5rem 0 2rem;
+    }
+    .values-list li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+    }
+    .values-list li strong {
+      font-weight: 500;
+      min-width: 130px;
+      color: var(--ink);
+    }
+    .values-list li span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .team-section {
+      margin: 2.5rem 0 1rem;
+    }
+    .team-section h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .team-card {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .team-card .team-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .team-card .team-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .team-card .team-info h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.2rem;
+    }
+    .team-card .team-info p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+    .team-card .team-info .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .about-sidebar {
+      font-size: 0.9rem;
+    }
+    .sidebar-widget {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+    .widget-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+    .sidebar-widget p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .fact-list {
+      list-style: none;
+    }
+    .fact-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.9rem;
+    }
+    .fact-list li:last-child {
+      border-bottom: none;
+    }
+    .fact-list .label {
+      color: var(--muted);
+    }
+    .fact-list .value {
+      font-weight: 500;
+      text-align: right;
+    }
+    .newsletter-sidebar {
+      background: var(--accent-soft);
+      padding: 1.5rem;
+      border-radius: 2px;
+    }
+    .newsletter-sidebar p {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .newsletter-sidebar input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid var(--border);
+      background: var(--paper-2);
+      margin-bottom: 0.8rem;
+      font-family: var(--font-sans);
+    }
+    .newsletter-sidebar button {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .newsletter-sidebar button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .footer-col p {
+      margin-bottom: 1rem;
+    }
+    .footer-col h4 {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-sidebar {
+        margin-top: 2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .page-header h1 {
+        font-size: 2.4rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .team-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo {
+        font-size: 1.6rem;
+      }
+      .page-header h1 {
+        font-size: 2rem;
+      }
+    }
+    /* utility */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Hollow Brick<span>Ideas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">Menu</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>About Hollow Brick</h1>
+      <p class="subhead">An independent editorial publication about interior design, architecture, and the built environment. We publish in-depth articles for people who want to understand how spaces work.</p>
+    </div>
+
+    <!-- ABOUT LAYOUT -->
+    <div class="about-grid">
+      <!-- MAIN TEXT -->
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Hollow Brick Ideas began in 2021 as a personal notebook. Maya Chen, an architectural designer, was tired of scrolling through glossy, surface-level design content that treated homes as backdrops for trends rather than places where real life unfolds. She started writing longer, slower pieces—examining why a room feels right, how materials age, and what makes a space genuinely livable.</p>
+        <p>What started as a few shared essays soon found an audience of design professionals, curious homeowners, and students who wanted more than pretty pictures. Today, Hollow Brick Ideas is an independent journal with a small editorial team and a clear mission: to bridge the gap between professional practice and everyday design curiosity.</p>
+
+        <div class="highlight">
+          “We believe good design is not about spectacle. It’s about the quiet choreography of light, material, and proportion that shapes how we live.”
+        </div>
+
+        <h2>What We Write About</h2>
+        <p>We cover the full spectrum of the built environment—from residential architecture and interior design to material science, lighting strategy, and space planning. Our articles are practical, researched, and written for people who want to make better decisions about their own spaces, whether they’re renovating a kitchen, building a home, or simply trying to make a rental feel like their own.</p>
+        <p>We don’t chase trends. Instead, we focus on enduring principles: how to read a floor plan, how to choose materials that age gracefully, how to layer lighting for comfort and drama, and how to design for the way people actually live.</p>
+
+        <h2>Our Editorial Values</h2>
+        <ul class="values-list">
+          <li><strong>Independence</strong> <span>We are not sponsored by brands or swayed by advertisers. Our recommendations are based on research, experience, and editorial judgment.</span></li>
+          <li><strong>Clarity</strong> <span>We explain complex ideas in plain language—no jargon, no gatekeeping. If a concept is worth knowing, it’s worth explaining well.</span></li>
+          <li><strong>Depth</strong> <span>We take the time to explore topics thoroughly. Our articles are meant to be read, not skimmed—and to be useful long after publication.</span></li>
+          <li><strong>Honesty</strong> <span>We acknowledge trade-offs, limitations, and the realities of budget and construction. Good design advice includes the fine print.</span></li>
+        </ul>
+
+        <h2>Meet the Team</h2>
+        <div class="team-section">
+          <div class="team-card">
+            <div class="team-avatar">MC</div>
+            <div class="team-info">
+              <h3>Maya Chen</h3>
+              <p class="role">Founder & Editor-in-Chief</p>
+              <p>Maya is an architectural designer and writer based in Portland, Oregon. She holds a Master of Architecture from UC Berkeley and has spent over a decade working on residential and adaptive-reuse projects. She founded Hollow Brick Ideas to create the kind of design writing she wanted to read—thoughtful, practical, and free from fluff.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">JR</div>
+            <div class="team-info">
+              <h3>Jonas Riedel</h3>
+              <p class="role">Senior Editor, Materials & Craft</p>
+              <p>Jonas is a furniture maker and material researcher based in Berlin. He writes about wood, stone, metal, and the quiet beauty of things that wear well. His work has appeared in <em>Fine Woodworking</em> and <em>Dwell</em>.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">SP</div>
+            <div class="team-info">
+              <h3>Simone Park</h3>
+              <p class="role">Contributing Editor, Lighting & Interiors</p>
+              <p>Simone is a lighting designer and interior stylist in Seoul. She writes our popular lighting guides and is passionate about helping people understand how light shapes the way a room feels.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Our Promise to Readers</h2>
+        <p>We will always tell you when we don’t know something. We will disclose our sources. We will correct our mistakes. And we will never publish an article just to fill space. Every piece we run is meant to inform, challenge, or inspire—ideally all three.</p>
+        <p>Thank you for reading. If you have a question, a story idea, or just want to say hello, please <a href="contact.html" style="color:var(--accent); border-bottom:1px solid var(--accent-soft);">get in touch</a>.</p>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="about-sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Hollow Brick at a Glance</h3>
+          <ul class="fact-list">
+            <li><span class="label">Founded</span><span class="value">2021</span></li>
+            <li><span class="label">Based in</span><span class="value">Portland, OR</span></li>
+            <li><span class="label">Articles published</span><span class="value">140+</span></li>
+            <li><span class="label">Monthly readers</span><span class="value">85k</span></li>
+            <li><span class="label">Editorial team</span><span class="value">3</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">From the Editor</h3>
+          <div class="about-image small">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Modern residential architecture with clean lines and natural light">
+          </div>
+          <p class="img-caption">“Design is not decoration. It’s the framework for daily life.”</p>
+          <p>We started Hollow Brick because we believe that understanding design makes life better. A well-planned room reduces stress. A well-chosen material brings joy for decades. A well-lit space helps you see your work clearly.</p>
+          <p>We’re here to help you see the built world with new eyes.</p>
+        </div>
+
+        <div class="sidebar-widget newsletter-sidebar">
+          <h3 class="widget-title">The Weekly Draft</h3>
+          <p>One thoughtful email every Sunday. Design ideas, reading, and a single practical tip.</p>
+          <input type="email" placeholder="Your email" id="newsletterEmail">
+          <button id="newsletterBtn">Subscribe</button>
+          <p style="font-size:0.7rem; margin-top:0.8rem;">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Explore</h3>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:0.8rem;"><a href="index.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">← Back to Journal</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="contact.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Contact Us</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="privacy.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Privacy Policy</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="terms.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Terms of Use</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Hollow Brick</div>
+          <p>An independent editorial publication about interior design, architecture, and the built environment. We publish in-depth articles for people who want to understand how spaces work.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hollow Brick Ideas. All rights reserved.</span>
+        <span>Made with care for the curious.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // ----- MOBILE MENU -----
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+
+      // ----- NEWSLETTER (demo) -----
+      const newsletterBtn = document.getElementById('newsletterBtn');
+      const newsletterEmail = document.getElementById('newsletterEmail');
+      if (newsletterBtn) {
+        newsletterBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const email = newsletterEmail.value.trim();
+          if (email && email.includes('@')) {
+            alert('Thanks for subscribing! (Demo — no email was sent.)');
+            newsletterEmail.value = '';
+          } else {
+            alert('Please enter a valid email address.');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

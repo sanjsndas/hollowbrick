@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use · Hollow Brick Ideas</title>
+  <meta name="description" content="Terms of Use for Hollow Brick Ideas — the rules and guidelines for using our website, content, and services.">
+  <link rel="canonical" href="https://hollowbrickideas.com/terms.html">
+  <meta property="og:title" content="Terms of Use · Hollow Brick Ideas">
+  <meta property="og:description" content="The rules and guidelines for using our website, content, and services.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hollowbrickideas.com/terms.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES (same as about) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --paper-2: #ffffff;
+      --border: #e2dfda;
+      --muted: #6b6b6b;
+      --accent: #a6472e;
+      --accent-soft: #f3eae6;
+      --max-width: 1280px;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+    .logo span {
+      font-size: 1rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      list-style: none;
+    }
+    .nav-links a {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.2rem;
+      transition: border-color 0.2s;
+    }
+    .nav-links a:hover {
+      border-color: var(--accent);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    /* ---------- PAGE TITLE ---------- */
+    .page-header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+      font-weight: 300;
+    }
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    /* ---------- TERMS CONTENT ---------- */
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+      align-items: start;
+    }
+    .terms-text h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 2.5rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+    .terms-text h2:first-of-type {
+      margin-top: 0;
+    }
+    .terms-text h3 {
+      font-family: var(--font-sans);
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin: 1.8rem 0 0.8rem;
+      letter-spacing: -0.01em;
+    }
+    .terms-text p {
+      margin-bottom: 1.4rem;
+      color: #2c2c2c;
+      font-size: 1.05rem;
+    }
+    .terms-text ul, .terms-text ol {
+      margin: 0.5rem 0 1.5rem 1.8rem;
+      color: #2c2c2c;
+      font-size: 1.05rem;
+    }
+    .terms-text li {
+      margin-bottom: 0.6rem;
+    }
+    .terms-text .highlight {
+      background: var(--accent-soft);
+      padding: 1.8rem 2rem;
+      border-left: 3px solid var(--accent);
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--ink);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .terms-text a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+    }
+    .terms-text a:hover {
+      border-color: var(--accent);
+    }
+    .terms-text .legal-note {
+      background: #f5f3f0;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 2rem 0;
+    }
+
+    /* ---------- SIDEBAR (same as about) ---------- */
+    .terms-sidebar {
+      font-size: 0.9rem;
+    }
+    .sidebar-widget {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+    .widget-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+    .sidebar-widget p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .fact-list {
+      list-style: none;
+    }
+    .fact-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.9rem;
+    }
+    .fact-list li:last-child {
+      border-bottom: none;
+    }
+    .fact-list .label {
+      color: var(--muted);
+    }
+    .fact-list .value {
+      font-weight: 500;
+      text-align: right;
+    }
+    .newsletter-sidebar {
+      background: var(--accent-soft);
+      padding: 1.5rem;
+      border-radius: 2px;
+    }
+    .newsletter-sidebar p {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .newsletter-sidebar input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid var(--border);
+      background: var(--paper-2);
+      margin-bottom: 0.8rem;
+      font-family: var(--font-sans);
+    }
+    .newsletter-sidebar button {
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .newsletter-sidebar button:hover {
+      background: var(--accent);
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .footer-col p {
+      margin-bottom: 1rem;
+    }
+    .footer-col h4 {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .terms-grid {
+        grid-template-columns: 1fr;
+      }
+      .terms-sidebar {
+        margin-top: 2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0 0.5rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .page-header h1 {
+        font-size: 2.4rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo {
+        font-size: 1.6rem;
+      }
+      .page-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Hollow Brick<span>Ideas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">Menu</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>Terms of Use</h1>
+      <p class="subhead">The rules and guidelines for using Hollow Brick Ideas. Please read carefully before browsing or interacting with our site.</p>
+      <p class="last-updated">Last updated: March 1, 2025</p>
+    </div>
+
+    <!-- TERMS LAYOUT -->
+    <div class="terms-grid">
+      <!-- MAIN TEXT -->
+      <div class="terms-text">
+        <h2>1. Agreement to Terms</h2>
+        <p>By accessing or using Hollow Brick Ideas (“the Site,” “we,” “us,” or “our”), you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use the Site. We reserve the right to update or modify these terms at any time without prior notice. Your continued use of the Site after any changes constitutes acceptance of the new terms.</p>
+
+        <div class="highlight">
+          “We believe in transparency. These terms are written in plain language so you can understand exactly how our site works and what we expect from each other.”
+        </div>
+
+        <h2>2. Intellectual Property</h2>
+        <p>All content on Hollow Brick Ideas—including articles, essays, photographs, graphics, logos, and the site design—is the property of Hollow Brick Ideas or its content creators and is protected by copyright and other intellectual property laws.</p>
+        <h3>2.1 Permitted Use</h3>
+        <p>You may:</p>
+        <ul>
+          <li>Read, share, and link to our articles for personal, non-commercial use.</li>
+          <li>Quote short excerpts (up to 200 words) with clear attribution and a link back to the original article.</li>
+          <li>Print or save pages for your own reference.</li>
+        </ul>
+        <h3>2.2 Prohibited Use</h3>
+        <p>You may not:</p>
+        <ul>
+          <li>Reproduce, republish, or distribute our content in full without written permission.</li>
+          <li>Use our content for commercial purposes without a license or agreement.</li>
+          <li>Modify, adapt, or create derivative works from our content without permission.</li>
+          <li>Remove or alter any copyright notices or attributions.</li>
+        </ul>
+        <p>To request permission for commercial use or republishing, please <a href="contact.html">contact us</a>.</p>
+
+        <h2>3. User Conduct</h2>
+        <p>When using our Site, you agree not to:</p>
+        <ul>
+          <li>Violate any applicable laws or regulations.</li>
+          <li>Infringe on the rights of others, including intellectual property and privacy rights.</li>
+          <li>Post or transmit any harmful, offensive, or disruptive content (including spam, malware, or hate speech).</li>
+          <li>Attempt to gain unauthorized access to our systems or interfere with the Site’s operation.</li>
+          <li>Use automated tools (bots, scrapers) to access or collect data from the Site without permission.</li>
+        </ul>
+        <p>We reserve the right to block or restrict access to any user who violates these guidelines.</p>
+
+        <h2>4. Third-Party Links & Content</h2>
+        <p>Our Site may contain links to third-party websites, products, or services. These links are provided for your convenience and do not imply endorsement. We are not responsible for the content, privacy practices, or accuracy of any third-party sites. You access them at your own risk.</p>
+        <p>We may also feature affiliate links or sponsored content from time to time. When we do, we will clearly disclose it. Our editorial opinions remain independent and are never influenced by advertisers or affiliates.</p>
+
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>All content on Hollow Brick Ideas is provided “as is” and “as available” without warranties of any kind, either express or implied. We do not guarantee that:</p>
+        <ul>
+          <li>The information on our Site is accurate, complete, or up-to-date.</li>
+          <li>The Site will be uninterrupted, secure, or error-free.</li>
+          <li>Any advice or recommendations will produce specific results.</li>
+        </ul>
+        <p>Design and construction decisions are your responsibility. Always consult qualified professionals (architects, engineers, contractors) before making structural or material choices. We are a publication, not a substitute for professional advice.</p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Hollow Brick Ideas and its contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Site or reliance on its content. This includes, without limitation, damages for loss of profits, data, or goodwill.</p>
+        <p>Our total liability to you for any claim arising from these terms or your use of the Site shall not exceed the amount you paid to us, if any, for accessing the Site.</p>
+
+        <h2>7. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Hollow Brick Ideas and its team from any claims, damages, losses, or expenses (including legal fees) arising from your violation of these Terms of Use or your misuse of the Site.</p>
+
+        <h2>8. Privacy</h2>
+        <p>Your use of the Site is also governed by our <a href="privacy.html">Privacy Policy</a>, which explains how we collect, use, and protect your personal information. By using the Site, you consent to our data practices as described in that policy.</p>
+
+        <h2>9. Termination</h2>
+        <p>We reserve the right to terminate or suspend your access to the Site at any time, without notice, for conduct that we believe violates these Terms of Use or is harmful to others.</p>
+
+        <h2>10. Governing Law</h2>
+        <p>These Terms of Use shall be governed by and construed in accordance with the laws of the State of Oregon, without regard to its conflict of law principles. Any disputes arising from these terms shall be resolved in the state or federal courts located in Multnomah County, Oregon.</p>
+
+        <h2>11. Contact</h2>
+        <p>If you have questions about these Terms of Use, please reach out:</p>
+        <p style="margin-bottom:0.5rem;"><strong>Email:</strong> legal@hollowbrickideas.com</p>
+        <p><strong>Mail:</strong> Hollow Brick Ideas, 1234 SE Division St, Portland, OR 97202, USA</p>
+
+        <div class="legal-note">
+          <p style="margin-bottom:0;"><strong>Note:</strong> This is a sample Terms of Use page for demonstration purposes. For a live website, please consult with a qualified attorney to ensure your terms comply with applicable laws and accurately reflect your practices.</p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="terms-sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Summary of Terms</h3>
+          <ul class="fact-list">
+            <li><span class="label">Content usage</span><span class="value">Personal, non-commercial</span></li>
+            <li><span class="label">Attribution</span><span class="value">Required for excerpts</span></li>
+            <li><span class="label">Commercial use</span><span class="value">Permission needed</span></li>
+            <li><span class="label">Affiliate links</span><span class="value">Disclosed</span></li>
+            <li><span class="label">Governing law</span><span class="value">Oregon, USA</span></li>
+            <li><span class="label">Last updated</span><span class="value">March 2025</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Related Pages</h3>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:0.8rem;"><a href="privacy.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Privacy Policy →</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="cookies.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Cookie Policy →</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="disclaimer.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Disclaimer →</a></li>
+            <li style="margin-bottom:0.8rem;"><a href="about.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">About Us →</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget newsletter-sidebar">
+          <h3 class="widget-title">The Weekly Draft</h3>
+          <p>One thoughtful email every Sunday. Design ideas, reading, and a single practical tip.</p>
+          <input type="email" placeholder="Your email" id="newsletterEmail">
+          <button id="newsletterBtn">Subscribe</button>
+          <p style="font-size:0.7rem; margin-top:0.8rem;">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Questions?</h3>
+          <p>If anything here is unclear, we're happy to explain. Reach out to our editorial team.</p>
+          <p><a href="contact.html" style="border-bottom:1px solid var(--border); padding-bottom:0.2rem;">Contact Us →</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Hollow Brick</div>
+          <p>An independent editorial publication about interior design, architecture, and the built environment. We publish in-depth articles for people who want to understand how spaces work.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hollow Brick Ideas. All rights reserved.</span>
+        <span>Made with care for the curious.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      }
+
+      const newsletterBtn = document.getElementById('newsletterBtn');
+      const newsletterEmail = document.getElementById('newsletterEmail');
+      if (newsletterBtn) {
+        newsletterBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const email = newsletterEmail.value.trim();
+          if (email && email.includes('@')) {
+            alert('Thanks for subscribing! (Demo — no email was sent.)');
+            newsletterEmail.value = '';
+          } else {
+            alert('Please enter a valid email address.');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
